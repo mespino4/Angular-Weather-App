@@ -1,6 +1,5 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment';
 import { weatherData } from '../models/weather.model';
 import { Observable } from 'rxjs';
 
@@ -24,8 +23,8 @@ export class WeatherService {
   getWeatherData(cityName: string): Observable<weatherData>{
     return this.http.get<weatherData>('https://open-weather13.p.rapidapi.com/city/' + cityName, {
       headers: new HttpHeaders()
-      .set(environment.XRapidAPIHostHeaderName, environment.XRapidAPIHostHeaderValue)
-      .set(environment.XRapidAPIKeyHeaderName, environment.XRapidAPIKeyHeaderValue),
+      .set('X-RapidAPI-Host', 'open-weather13.p.rapidapi.com')
+      .set('X-RapidAPI-Key', '74c9549321msh7331cf855c97183p170f6ejsn3ed947922284'),
     })
   }
 }
