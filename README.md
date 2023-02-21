@@ -1,6 +1,6 @@
 # AngularWeatherApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
+used this API https://rapidapi.com/worldapi/api/open-weather13/
 
 ## Development server
 
