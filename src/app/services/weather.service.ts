@@ -9,17 +9,7 @@ import { Observable } from 'rxjs';
 export class WeatherService {
 
   constructor(private http:HttpClient) { }
-/*
-  getWeatherData(cityName: string): Observable<weatherData>{
-    return this.http.get<weatherData>(environment.weatherApiBaseUrl, {
-      headers: new HttpHeaders()
-      .set(environment.XRapidAPIHostHeaderName, environment.XRapidAPIHostHeaderValue)
-      .set(environment.XRapidAPIKeyHeaderName, environment.XRapidAPIKeyHeaderValue),
-      params: new HttpParams()
-      .set('', cityName)
-    })
-  }
-*/
+
   getWeatherData(cityName: string): Observable<weatherData>{
     return this.http.get<weatherData>('https://open-weather13.p.rapidapi.com/city/' + cityName, {
       headers: new HttpHeaders()
