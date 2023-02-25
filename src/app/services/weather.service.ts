@@ -10,8 +10,22 @@ import { __param } from 'tslib';
 export class WeatherService {
 
   constructor(private http:HttpClient) { }
+<<<<<<< HEAD
 
   /*
+=======
+/*
+  getWeatherData(cityName: string): Observable<weatherData>{
+    return this.http.get<weatherData>(environment.weatherApiBaseUrl, {
+      headers: new HttpHeaders()
+      .set(environment.XRapidAPIHostHeaderName, environment.XRapidAPIHostHeaderValue)
+      .set(environment.XRapidAPIKeyHeaderName, environment.XRapidAPIKeyHeaderValue),
+      params: new HttpParams()
+      .set('', cityName)
+    })
+  }
+*/
+>>>>>>> parent of db37e57 (update Images)
   getWeatherData(cityName: string): Observable<weatherData>{
     return this.http.get<weatherData>('https://tomorrow-io1.p.rapidapi.com/timelines?', {
       headers: new HttpHeaders()
