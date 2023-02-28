@@ -14,4 +14,4 @@ Wind Speed
 
 ## Search City
 
-There is a search box on top to search for a city and the app will return the temperature
+There is a search box on top to search for a city and the app will return the temperature.
