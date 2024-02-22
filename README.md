@@ -1,5 +1,5 @@
-# AngularWeather
-AngularWeather is a simple weather application built with Angular and powered by the Open Weather API from RapidAPI.com.
+# Angular Weather
+Angular Weather is a simple weather application built with Angular and powered by the Open Weather API from RapidAPI.com.
 
 ## Features
 - **Real-time Weather Data**: Fetches real-time weather data from the Open Weather API to provide accurate and up-to-date information.
