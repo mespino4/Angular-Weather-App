@@ -32,9 +32,12 @@ You can experience the AngularWeatherApp by visiting [this link](https://mespino
 4. Start the development server with `ng serve`.
 5. Visit `http://localhost:4200` in your browser to view the application.
 
-##Screenshots & Demo
+## Screenshots & Demo
+
 ![ss1](images/ss1.png)
+
 ![demo](images/ngweatherDemo.gif)
+
 ## Contribution
 
 Contributions are welcome! Feel free to submit issues, feature requests, or pull requests.
